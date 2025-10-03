@@ -1,6 +1,13 @@
+
 <div align="center">
 
 # 📦 Flyway Demo - Projeto Spring Boot com H2  
+
+[![Java](https://img.shields.io/badge/Java-21-blue)](https://www.oracle.com/java/)  
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.6-brightgreen)](https://spring.io/projects/spring-boot)  
+[![Flyway](https://img.shields.io/badge/Flyway-DB--Migrations-red)](https://flywaydb.org/)  
+[![Maven](https://img.shields.io/badge/Maven-Build%20Tool-orange)](https://maven.apache.org/)  
+[![H2](https://img.shields.io/badge/Database-H2-lightgrey)](https://www.h2database.com/)  
 
 </div>
 
@@ -14,6 +21,7 @@ Implementar um sistema de **controle de versão de banco de dados** usando **Fly
 ## 📝 Descrição
 Este projeto consiste em um **sistema de cadastro de produtos** para uma loja virtual, desenvolvido com **Spring Boot** e **Flyway**.  
 O objetivo é garantir que todas as alterações no **schema do banco de dados** sejam versionadas e aplicadas de forma consistente em diferentes ambientes (desenvolvimento, teste e produção).
+
 ---
 
 ## ⚙️ Tecnologias Utilizadas
@@ -107,6 +115,8 @@ Após iniciar, acesse:
 
 ---
 
-## 👨‍🎓 Integrante:
+## 👨‍🎓 Integrante
 - **Léo Mota Lima (RM 557851)**  
-Disciplina **Java Advanced** - Turma: 2TDSB - Ano: 2025 🚀
+Disciplina **Java Advanced** - Turma: 2TDSB - Ano: 2025 🚀  
+---
+
