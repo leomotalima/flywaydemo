@@ -1,19 +1,10 @@
-::: {align="center"}
-```{=html}
-<h1>
-```
-📦 Flyway Demo - Projeto Spring Boot com H2
-```{=html}
-</h1>
-```
-```{=html}
-<p>
-```
-Disciplina: `<b>`{=html}Java Advanced`</b>`{=html} \| FIAP
-```{=html}
-</p>
-```
-:::
+<div align="center">
+
+# 📦 Flyway Demo - Projeto Spring Boot com H2  
+
+Disciplina: **Java Advanced** \| FIAP  
+
+</div>
 
 ------------------------------------------------------------------------
 
