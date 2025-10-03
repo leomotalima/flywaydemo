@@ -118,8 +118,11 @@ Após iniciar, acesse:
 ## 👨‍🎓Informações Acadêmicas
 
 Atividade: CheckPoint 5 – Java Avançado
+
 Professor: Luis Roberto Guerreiro Lopes
+
 Aluno: Léo Mota Lima – RM 557851
+
 Turma: 2TDSB – FIAP 2025🚀  
 ---
 
