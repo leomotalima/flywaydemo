@@ -2,115 +2,114 @@
 
 # 📦 Flyway Demo - Projeto Spring Boot com H2  
 
-Disciplina: **Java Advanced** \| FIAP  
+Disciplina: **Java Advanced** | FIAP  
 
 </div>
 
-------------------------------------------------------------------------
+---
 
-## 🎯 Objetivo da Atividade
+## 📖 Objetivo da Atividade
+Implementar um sistema de **controle de versão de banco de dados** usando **Flyway** em uma aplicação **Spring Boot**, criando e gerenciando migrações para a entidade **Produto**.
 
-Implementar um **sistema de controle de versão de banco de dados**
-usando **Flyway** em uma aplicação **Spring Boot**, criando e
-gerenciando migrações para a entidade **Produto**.\
-O sistema deve permitir que todas as alterações de schema sejam
-rastreadas e aplicadas de forma consistente em diferentes ambientes.
+---
 
-------------------------------------------------------------------------
+## 📝 Enunciado
+Você foi contratado para desenvolver um sistema de cadastro de produtos para uma loja virtual.  
+O sistema precisa ter **controle de versão do banco de dados** para garantir que todas as alterações no schema sejam rastreadas e aplicadas consistentemente em diferentes ambientes (desenvolvimento, teste, produção).
 
-## 📚 Tecnologias Utilizadas
+---
 
--   **Java 17+**
--   **Spring Boot 3**
--   **Spring Web**
--   **Spring Data JPA**
--   **H2 Database** (em memória)
--   **Flyway** (controle de versões do banco)
--   **Maven**
+## ⚙️ Tecnologias Utilizadas
+- Java 24 (JDK 24.0.1)  
+- Spring Boot 3.5.6  
+- Spring Web  
+- Spring Data JPA  
+- H2 Database  
+- Flyway  
+- Maven  
 
-------------------------------------------------------------------------
+---
 
-## 🏗 Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
-``` bash
+```
 src/
 ├── main/
 │   ├── java/com/example/flywaydemo/
-│   │   ├── FlywaydemoApplication.java     # Classe principal
-│   │   ├── config/DatabaseConfig.java     # Configuração do Flyway
-│   │   ├── model/Produto.java             # Entidade Produto
-│   │   ├── repository/ProdutoRepository.java # Repositório JPA
-│   │   └── controller/ProdutoController.java # Endpoints REST
+│   │   ├── FlywayDemoApplication.java
+│   │   ├── config/DatabaseConfig.java
+│   │   ├── model/Produto.java
+│   │   ├── repository/ProdutoRepository.java
+│   │   └── controller/ProdutoController.java
 │   └── resources/
-│       ├── application.properties         # Configurações da aplicação
-│       └── db/migration/                  # Migrações Flyway
+│       ├── application.properties
+│       └── db/migration/
 │           ├── V1__Create_products_table.sql
 │           ├── V2__Add_category_to_products.sql
 │           └── V3__Insert_initial_products.sql
 ```
 
-------------------------------------------------------------------------
+---
 
-## 🗄 Migrações Flyway
+## 🚀 Como rodar o projeto
 
-1.  \*\*V1\_\_Create_products_table.sql\*\* → Criação da tabela
-    `produto`.\
-2.  \*\*V2\_\_Add_category_to_products.sql\*\* → Adição da coluna
-    `categoria`.\
-3.  \*\*V3\_\_Insert_initial_products.sql\*\* → Inserção de dados
-    iniciais.
+Clone o repositório:
 
-------------------------------------------------------------------------
-
-## 🌐 Endpoints da API
-
-Base URL: `http://localhost:8080/produtos`
-
-  Método   Endpoint           Descrição
-  -------- ------------------ ----------------------------
-  GET      `/produtos`        Lista todos os produtos
-  GET      `/produtos/{id}`   Busca produto por ID
-  POST     `/produtos`        Cria novo produto
-  PUT      `/produtos/{id}`   Atualiza produto existente
-  DELETE   `/produtos/{id}`   Remove produto por ID
-
-### 🔹 Exemplo de POST
-
-``` json
-{
-  "nome": "Monitor LG",
-  "preco": 999.90,
-  "quantidade": 3,
-  "categoria": "Informática"
-}
+```bash
+git clone https://github.com/leomotalima/flywaydemo.git
+cd flywaydemo
 ```
 
-------------------------------------------------------------------------
+Rodar com Maven:
+
+```bash
+./mvnw spring-boot:run
+```
+
+Ou abrir o projeto na sua IDE (IntelliJ / Eclipse) e rodar a classe:
+
+```
+com.example.flywaydemo.FlywaydemoApplication
+```
+
+Após iniciar, acesse:
+
+- **API REST**: [http://localhost:8080/produtos](http://localhost:8080/produtos)  
+- **Console H2**: [http://localhost:8080/h2-console](http://localhost:8080/h2-console)  
+  - JDBC URL: `jdbc:h2:mem:flywaydb`  
+  - Usuário: `sa`  
+  - Senha: *(em branco)*  
+
+---
+
+## 🌱 Migrações Flyway
+
+- `V1__Create_products_table.sql`: Cria tabela `produto`  
+- `V2__Add_category_to_products.sql`: Adiciona coluna `categoria`  
+- `V3__Insert_initial_products.sql`: Insere dados iniciais  
+
+---
+
+## 🔗 Endpoints da API
+
+- **GET** `/produtos` → Lista todos os produtos  
+- **GET** `/produtos/{id}` → Busca produto por ID  
+- **POST** `/produtos` → Cria novo produto  
+- **PUT** `/produtos/{id}` → Atualiza produto existente  
+- **DELETE** `/produtos/{id}` → Remove produto  
+
+---
 
 ## 📸 Prints de Funcionamento
 
 ### Console H2
-
 ![H2 Console](docs/images/h2-console.png)
 
-### API -- Listagem de Produtos
+### GET /produtos
+![GET Produtos](docs/images/get-produtos.png)
 
-![GET /produtos](docs/images/get-produtos.png)
+---
 
-------------------------------------------------------------------------
-
-## ✅ Validações
-
--   [x] As migrações do **Flyway** foram executadas automaticamente no
-    start da aplicação.\
--   [x] Os dados iniciais estão populados corretamente.\
--   [x] A API REST responde conforme os requisitos.
-
-------------------------------------------------------------------------
-
-## 👨‍💻 Autor
-
--   **Léo Mota Lima**
-    -   [GitHub](https://github.com/leomotalima)\
-    -   RM: **557851**\
-    -   Curso: **2TDSB - FIAP**
+## 👨‍🎓 Integrante:
+- **Léo Mota Lima (RM 557851)**  
+Disciplina **Java Advanced** - FIAP 🚀
