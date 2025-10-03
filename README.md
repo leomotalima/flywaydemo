@@ -115,8 +115,11 @@ Após iniciar, acesse:
 
 ---
 
-## 👨‍🎓 Integrante
-- **Léo Mota Lima (RM 557851)**  
-Disciplina **Java Advanced** - Turma: 2TDSB - Ano: 2025 🚀  
+## 👨‍🎓Informações Acadêmicas
+
+Atividade: CheckPoint 5 – Java Avançado
+Professor: Luis Roberto Guerreiro Lopes
+Aluno: Léo Mota Lima – RM 557851
+Turma: 2TDSB – FIAP 2025🚀  
 ---
 
