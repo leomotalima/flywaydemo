@@ -17,7 +17,7 @@ O objetivo é garantir que todas as alterações no **schema do banco de dados**
 ---
 
 ## ⚙️ Tecnologias Utilizadas
-- Java 24 (JDK 24.0.1)  
+- Java 21 (JDK 21.0.1)  
 - Spring Boot 3.5.6  
 - Spring Web  
 - Spring Data JPA  
