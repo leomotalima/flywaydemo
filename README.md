@@ -13,10 +13,9 @@ Implementar um sistema de **controle de versão de banco de dados** usando **Fly
 
 ---
 
-## 📝 Enunciado
-Você foi contratado para desenvolver um sistema de cadastro de produtos para uma loja virtual.  
-O sistema precisa ter **controle de versão do banco de dados** para garantir que todas as alterações no schema sejam rastreadas e aplicadas consistentemente em diferentes ambientes (desenvolvimento, teste, produção).
-
+## 📝 Descrição
+Este projeto consiste em um **sistema de cadastro de produtos** para uma loja virtual, desenvolvido com **Spring Boot** e **Flyway**.  
+O objetivo é garantir que todas as alterações no **schema do banco de dados** sejam versionadas e aplicadas de forma consistente em diferentes ambientes (desenvolvimento, teste e produção).
 ---
 
 ## ⚙️ Tecnologias Utilizadas
