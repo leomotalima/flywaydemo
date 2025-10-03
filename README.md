@@ -2,8 +2,6 @@
 
 # 📦 Flyway Demo - Projeto Spring Boot com H2  
 
-Disciplina: **Java Advanced** | FIAP  
-
 </div>
 
 ---
@@ -111,4 +109,4 @@ Após iniciar, acesse:
 
 ## 👨‍🎓 Integrante:
 - **Léo Mota Lima (RM 557851)**  
-Disciplina **Java Advanced** - Turma: 2TDSB FIAP 🚀
+Disciplina **Java Advanced** - Turma: 2TDSB - Ano: 2025 🚀
